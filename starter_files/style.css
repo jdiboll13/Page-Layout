@@ -1,0 +1,148 @@
+/*
+
+    COLORS
+
+    Pink   : #ffdddd
+    Purple : #ddddff
+    Green  : #ddffdd
+    Blue   : #ddffff
+    Yellow : #ffffdd
+
+    BREAKPOINTS
+
+    600px
+    1100px
+
+*/
+
+body {
+  font-family: Palatino, Times, serif;
+  background-color: #ddffdd;
+  margin: 20px;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+ul {
+  padding-left: 20px;
+  margin-top: 0;
+}
+
+h1, h2, h3 {
+  color: #009999;
+}
+
+h2, h3 {
+  margin-bottom: 0;
+}
+
+a {
+  font-weight: bold;
+  color: red;
+  text-decoration: none;
+}
+
+a:hover {
+  color: blue;
+}
+
+header {
+  padding-bottom: 15px;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #ddddff;
+}
+
+#site_container {
+  padding: 20px;
+  max-width: 1100px;
+  margin: 0 auto;
+  background: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+
+#main_content {
+  background: #ddffff;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+#main_nav {
+  text-align: center;
+}
+
+#logo {
+  text-align: center;
+}
+
+#site_footer nav {
+  background: #ffdd99;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+#site_footer a {
+  padding: 0 20px;
+}
+
+#sidebar_content div {
+  background: #ffffdd;
+  padding: 20px;
+  margin: 20px 0;
+}
+
+#main_nav a {
+  display: block;
+  padding: 10px 2%;
+  background: #ffdddd;
+  margin-bottom: 5px;
+  border-radius: 5px;
+}
+
+#main_nav a:hover {
+  background: #ddddff;
+}
+
+@media (min-width:600px) {
+  #main_nav {
+    display: flex;
+    justify-content: space-between;
+  }
+  #main_nav a {
+    padding: 10px 11%;
+  }
+  #sidebar_content {
+    display: flex;
+    justify-content: space-between;
+    background: #ffffdd;
+    margin: 20px 0;
+  }
+}
+
+@media (min-width:1100px) {
+  header {
+    display: flex;
+    justify-content: center;
+    padding: 10px 2%;
+  }
+  #logo {
+    flex: 1;
+    text-align: left;
+  }
+  #main_nav {
+    flex: 3;
+  }
+  #main_nav a {
+    padding: 25px 90px;
+  }
+  #main_content {
+    display: flex;
+  }
+  #main_content > div {
+    flex-basis: 70%;
+  }
+  #main_content div:last-child {
+    flex-basis: 30%;
+  }
+}
